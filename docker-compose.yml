@@ -1,0 +1,11 @@
+version: '3'
+
+networks:
+  my-network:
+    driver: bridge
+
+services:
+  web:
+    image: nginx
+    networks:
+      - my-network
